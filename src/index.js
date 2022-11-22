@@ -1,4 +1,4 @@
-import Vrata from "./core/vrata";
-import routes from "./routes";
+import Component from "./component.vr"
 
-new Vrata(routes).init()
+const container = document.getElementById("root")
+container.innerHTML = Component

@@ -15,5 +15,16 @@ module.exports = {
         template: "./src/index.html",
         filename: "./index.html"
     })
-  ]
+  ],
+  module: {
+    rules: [
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: path.resolve('./my-loader.js'),
+            enforce: 'pre',
+            options: {text: 'hello world'},
+          }
+    ]
+  }
 };
