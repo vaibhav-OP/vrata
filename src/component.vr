@@ -1,5 +1,3 @@
-export default function() {
-    return (
-        <h1>hey world</h1>
-    )
-}
+<h1>hey</h1>
+
+how are you?
